@@ -1,0 +1,1 @@
+Pequeño sistema manual, donde con un array en javascript elijes el ganador de un sorteo de manera aleatoria.
