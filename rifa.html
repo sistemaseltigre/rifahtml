@@ -1,0 +1,86 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RIFA HP ALFAINGENIEROS</title>
+	 <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Baloo+Tamma">
+    <style>
+      body {
+        font-family: 'Baloo Tamma', serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,258dc8+100;Blue+Flat+%231 */
+		background: #258dc8; /* Old browsers */
+		background: -moz-linear-gradient(top,  #258dc8 0%, #258dc8 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #258dc8 0%,#258dc8 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #258dc8 0%,#258dc8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+
+      }
+      /* Nieve en el fondo del blog
+----------------------------------------------- */
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-ms-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+#contenedor-nieve {
+background-image: url(http://lh3.googleusercontent.com/-k6mAvDmeu4Q/UMefU6JI32I/AAAAAAAADpM/zdjTclnGDhM/s500/snow.png), url(http://lh6.googleusercontent.com/-8wOkQAdxfgg/UMefVfmte0I/AAAAAAAADpU/aE4HxfiXD88/s400/snow3.png), url(http://lh5.googleusercontent.com/-fhO2tXwKP9M/UMefVCohCOI/AAAAAAAADpQ/nFVnzK1W0xw/s300/snow2.png);
+-webkit-animation: snow 20s linear infinite;
+-moz-animation: snow 20s linear infinite;
+-ms-animation: snow 20s linear infinite;
+animation: snow 20s linear infinite;
+}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body style="background-color: rgba(36, 59, 241, 1)" onLoad="setInterval('goRifa()',100);" expr:class='&quot;loading&quot; + data:blog.mobileClass'>
+<div align="center">
+<img src="http://www.alfaingenieros.com/alfa/img/logo.png"><br>
+<!--<button onclick="goRifa()">Empezar Rifa</button>-->
+<button onclick="getWiner()">Elejir un ganador</button>
+<div id="ganador">
+	<h1>El ganador es: <div id='contenedor-nieve'><font color="black"><span id="ganador_nombre"></font></span></div></h1>
+</div>
+</div>
+<div align="center">
+	<span id="nombreMostrarId"></span>
+</div>
+<script type="text/javascript">
+var ArrayHP = ['BAUTISTA HERRERA ANGIE CAROLINA','CARRASQUILLA HENAO JOSMA','GARCIA MONTAÑO NEIDA CAROLINA','GARZON ORTIZ LINA PAOLA','JIMÉNEZ ALBA CRISTHIAN DAVID','MELENDEZ MOLINA CINDY IDALY','MORENO RUEDA OSCAR DAVID','PEDRAZA CARO EDUARDO JAVIER','PINTO PINZÓN JESSICA ANDREA','RAYO ROCHA JAIME ENRIQUE','RIVERA CESPEDES LAURA XIMENA','MORENO AREVALO LAURA MILENA','PALOMINO VIEIRA MARIO ANDRES'];
+
+
+//['ALBA GARZÓN ANGELA MARÍA','ARCHILA PARRA JOHN ALEXANDER','ARIZA OTAYA JESUS ALBERTO','AVELLANEDA HORTUA JUAN PABLO','BALLEN TORRES GINA PAOLA','BAYONA HUERTAS DIANA MARCELA','BEJARANO RIOS MICHAEL YAMID','BELLO ALEMAN ELIAS','BENAVIDES CETINA FRANK MAURICIO','CABRERA YEHIMY ALEXANDRA ','CAJAMARCA BAUTISTA CRISTHIAN FABIAN','CALLEJAS SARMIENTO CESAR FABIAN','CALVACHI REVELO ANDRES ALBERTO','CAMACHO MOSQUERA SERGIO ALFONSO','CAMACHO RINCON EDWARD','CAMARGO CASTRO CLARA LORENA','CARDENAS ZAMBRANO IVONNS ALEXANDRA','CERQUERA RODRIGUEZ LIDA TERESA','CHAMORRO MANRIQUE OSCAR','CORTES PEÑARANDA JORGE ORLANDO','CRUZ HERNANDEZ LUZ DALILA','CUFIÑO  NUÑEZ OLGA LEONOR','ENRIQUEZ CALDERON CRISTIAN CAMILO','FINO RODRIGUEZ ROLANDO','GALINDO SALDAÑA ELIANA MAYERLY','GARCIA CABRERA OSCAR MAURICIO','GARCIA RAMIREZ LUISA FERNANDA','GARNICA DIAZ PEDRO FABIAN','GIRALDO RAMIREZ GILBERTO MAURICIO','GONZALEZ MUÑOZ ALEXANDER','GUERRERO TRIANA EDWIN IGNACIO','GUTIERREZ ARIAS RODRIGO','GUZMAN CUSARIA HERNAN OSWALDO','HENAO CANO LUIS FERNANDO','HERNANDEZ CARVAJAL MAURICIO STEWART','JARA ABELLA JOSE IGNACIO','JARAMILLO ACOSTA JAIME ANDRES','LANDINEZ ORTIZ WILSON ANDRES','LINARES CRUZ LEONARD MAURICIO','LOPEZ DUARTE CARLOS ALBERTO','LOZANO MARTINEZ WILSON ANDRES','MALDONADO JUAN CARLOS','MANCERA RAMÍREZ JONATHAN','MATTA PERDOMO FRANCISCO','MELO LOPEZ IVAN HERNANDO ','MONTAÑO GONZALEZ OSCAR ENRIQUE','MORENO ACUÑA LUISA FERNANDA','MULLER VILLEGAS STEPHANIE','ORJUELA OLIVEROS CARLOS EDUARDO','ORTIZ QUIROGA JEIMMY KARINA','PAEZ HERRERA HARBEY ANDRES','PAPAGAYO MERCHAN MARIA PATRICIA','PARRA SUATERNA PEDRO ANTONIO','PAZ AVILA MILTON FABIAN','PEÑA GARAY JHONNY FERNANDO','PEÑA GONZALEZ EDISON FERNANDO','PINZON GOMEZ FABIAN ALFREDO','PIZA RAMOS GINA ALEXANDRA','PRECIADO BERNAL YIRSON ALBEIRO','QUINTERO RATIVA JORGE LUIS','QUIROGA PEREZ JORGE ANDRES','RABA BELLO FERNANDO','RAMIREZ MENDEZ FABIAN CLEMENTE','REYES BALLESTEROS RODRIGO','RODRIGUEZ ARENAS FRANCISCO ARTURO','RODRIGUEZ HERNANDEZ LUZ ANGELA','ROJAS VILLAMIL MICHAEL','SALAZAR BOGOTA JERSSON LEONARDO','SANABRIA GARCIA ALEJANDRO ALFREDO','SANCHEZ RICO HECTOR HERNANDO','SILVA BARRAGAN FRANKIM EDUARDO','TELLEZ SANCHEZ CAMILO','URQUIJO RODRIGUEZ JOHN ALEXANDER','URREGO ARCOS CAMILA','URREGO ORTIZ DIANA CATALINA','VALENZUELA BERNAL DYNORIS MARITZA','VARGAS TIBOCHA JORGE ALEJANDRO','VELANDIA TALERO ILCE MARYLIN','VISBAL MANJARRES DANIEL EDUARDO','YANES JULIO CESAR','MURILLO ORTIZ KAREN LISSETH','ARBELAEZ LELION ANDREA ','ROMERO QUIJANO LIDA JAZMÍN','TORO SANCHEZ ROSA OBDULIA','ZULUAGA CAICEDO LEONARD ENRIQUE','PIÑEROS FORERO HAROLD ALEXANDER','MEDINA SANCHEZ HERNAN FELIPE','QUIROZ BOLÍVAR CARLOS EDUARDO','COSSIO TOVAR ANDRÉS FELIPE'];
+function goRifa(){
+	
+    var nombreMostrar = ArrayHP[Math.floor(Math.random() * ArrayHP.length)];
+    $('#nombreMostrarId').html(nombreMostrar);
+	
+}
+function getWiner(){
+	var rand = ArrayHP[Math.floor(Math.random() * ArrayHP.length)];
+	$('#ganador_nombre').html(rand);
+}
+<!--
+//var rand = myArray[Math.floor(Math.random() * myArray.length)];
+//var myArray = ['Luz Marina Guio', 'Jesus Silva', 'Elba Paez'];  
+-->
+</script>
+</body>
+</html>
